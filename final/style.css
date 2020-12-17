@@ -1,0 +1,123 @@
+/* CSS Styles */
+#wrapper{
+max-width: 1200px;
+padding: 1em;
+margin: 0 auto;
+}
+.site-header{
+display: flex;
+justify-content: space-between;
+}
+.menu{
+display: none;
+}
+.show-menu{
+background-color: green;
+border: none;
+}
+.program-bar{
+ display:flex;
+ flex-wrap:wrap;
+ background-color: white;
+ min-height: 2em;
+border: solid 1px #ccc;
+border-radius: 10px;
+padding: 1em;
+margin-bottom: 0em;
+}
+.program-bar ul{
+ padding:0;
+ list-style-type:none;
+}
+.program-nav{
+ width:30%;
+ text-decoration: none;
+}
+.program-nav a{
+display:block;;
+ background-color:#FFFFF0;
+ border-bottom:solid 1px #380000;
+ color:black;
+ text-decoration:none;
+ z-index: 12;
+}
+.program-nav a:hover{
+ background-color:pink;
+}
+.dropdown{
+ display:none;
+padding: 0;
+position: absolute;
+}
+.program-nav li: .dropdown{
+ display:block;
+ text-decoration: none;
+}
+.program-nav li:hover .dropdown{
+ display:block;
+}
+.menubar a:hover{
+background-color:pink;
+}
+.search-programs{
+min-height: 80em;
+min-width: 60em;
+border: solid 1px #ccc;
+border-radius: 3px;
+padding: 1em;
+margin-bottom: 1em;
+}
+.title{
+font-style: normal;
+font-weight: 300;
+font-size: 38px;
+line-height: 40px;
+}
+.hero-banner{
+min-height: 22em;
+background-image: url(2020.jpg);
+background-size: cover;
+background-color: gray;
+padding: 5em;
+margin: 0em;
+}
+.hero-banner h3{
+color: pink;
+position: absolute;
+font-weight: bold;
+font-size: 40px;
+}
+.hero-banner a{
+text-decoration: none;
+color: purple;
+}
+.event-item img{
+width: 100%;
+}
+@media (min-width: 768px){
+show-menu{
+display:none;
+  }
+.show-menu{
+display: none;
+}
+.menu{
+display: flex;
+		position: static;
+	}
+	.menu li{
+	display: inline;
+	margin-right: 1em;
+	}
+
+	.layout{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-column-gap: 1em;
+	}
+	.menubar a{
+    border:none;
+    padding: 0 1em;
+    
+  }
+}	/*closing media query/
